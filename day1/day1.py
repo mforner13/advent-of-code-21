@@ -1,10 +1,6 @@
 from typing import List
 
-
-def read_puzzle_input(path_to_puzzle: str) -> List[int]:
-    with open(path_to_puzzle, "r") as data:
-        depths = [int(depth.strip("\n")) for depth in data]
-    return depths
+from utils.read_puzzle_input import read_puzzle_input
 
 
 def count_how_many_increases(depths: List) -> int:
